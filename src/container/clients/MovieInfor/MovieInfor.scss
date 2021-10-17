@@ -1,0 +1,28 @@
+.img-theater {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .complex-theater{
+      min-width: 300px !important;
+  }
+  
+  .complex__info {
+    text-align: left;
+    p {
+      font-size: 14px;
+      color: #000;
+      line-height: 1.4;
+      margin-bottom: -2px;
+    }
+    span {
+      font-size: 12px;
+      color: #949494;
+    }
+    h5{
+      color: #fb4226;
+      font-size: 12px;
+      font-weight: 400;
+    }
+  }
+  

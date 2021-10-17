@@ -1,0 +1,85 @@
+.checkout {
+    margin-top: 100px;
+    padding: 0;
+}
+
+////////////////////////////////
+.checkout__right {
+    margin-top: 100px;
+}
+
+// .screen {
+//     background-color: gray;
+//     height: 70px;
+//     width: 95%;
+//     margin: 15px 0;
+//     margin-top: 0px;
+//     transform: rotateX(-45deg);
+//     box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+// }
+
+.bg__screen {
+    perspective: 1000px;
+    margin-bottom: 30px;
+    background-color: white;
+}
+
+.screen {
+    background-color: gray;
+    height: 70px;
+    width: 100%;
+    margin: 15px 0px;
+    margin-left: -15px;
+    margin-top: 0px;
+    transform: rotateX(-45deg);
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+}
+
+.ghe {
+    width: 25px;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    background-color: rgb(123, 122, 122);
+    color: azure;
+}
+
+.gheDaDat {
+    background-color: rgb(34, 18, 176) !important;
+}
+
+.gheDangDat {
+    background-color: rgb(77, 179, 77) !important;
+}
+
+.gheVip {
+    background-color: rgb(228, 74, 8);
+}
+
+// css cho right
+.okk {
+    margin-right: 10px;
+}
+
+//ghe chính mình đặt
+.gheDaDuocDat {
+    background-color: white;
+    background-color: rgb(46, 46, 199) !important;
+    -webkit-box-shadow: 4px 5px 7px 0px rgba(28, 243, 255, 0.73);
+    box-shadow: 4px 5px 7px 0px rgba(28, 243, 255, 0.73);
+    color: orange !important;
+}
+
+//@
+.datVe__chechout {
+    background-color: green;
+    display: block;
+    height: 30px;
+    width: 374px;
+    color: white;
+}
+.hhh{
+    margin-top: 100px;
+}

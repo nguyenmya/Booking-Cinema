@@ -1,0 +1,15 @@
+@import "../../../scss/main.scss";
+
+.movieList {
+    margin-bottom: 100px;
+    width: 1000px;
+    margin-top: 100px;
+    .movieList__card {
+        width: 200px;
+        .movieList__imgs {
+            display: block;
+            width: 230px;
+            border-radius: 5px;
+        }
+    }
+}

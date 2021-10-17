@@ -1,0 +1,36 @@
+.bg__screen {
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  margin-bottom: 30px;
+  background-color: silver;
+}
+
+.screen {
+  background-color: gray;
+  height: 70px;
+  width: 100%;
+  margin: 15px 0;
+  -webkit-transform: rotateX(-45deg);
+          transform: rotateX(-45deg);
+  -webkit-box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+          box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+}
+
+.seat {
+  width: 60px;
+  margin: 10px;
+  text-align: center;
+  background-color: black;
+}
+
+.seat.selected {
+  background-color: gray;
+}
+
+.seatThuong {
+  color: white;
+}
+
+.seatVIP {
+  color: yellow;
+}

@@ -1,0 +1,155 @@
+@import '../../scss/main.scss';
+footer {
+    background-color: #222;
+    padding-top: $pd-1;
+    .footer__content {
+        max-width: 940px;
+        .footer__top {
+            border-bottom: 1px solid rgba(248, 246, 246,0.3);
+            .footer__title {
+                @include styleText($fs-0 - 2,$bg-color,0,$mg-1,$fw-bold-1);
+                text-transform: uppercase;
+            }
+            ul {
+                li {
+                    a {
+                        text-decoration: none;
+                        @include styleText($fs-0 - 3,$color-p,0,$mg-1,$fw-bold-1);
+                        transition: all .3s;
+                        &:hover {
+                            color: $bg-color;
+                        }
+                    }
+                }
+            }
+            .footer__list--image {
+                margin-bottom: $mg-1;
+                img {
+                    height: 30px;
+                    width: 30px;
+                    border-radius: 50%;
+                    background-color: $bg-color;
+                    margin-right: $mg-1;
+                    transition: all .2s;
+                    &:hover {
+                        opacity: 0.7;
+                    }
+                }
+            }
+
+            .footer__list--icon {
+                padding-left: $pd-1;
+                img {
+                    height: 30px;
+                    width: 25px;
+                    margin-right: $mg-1;
+                }
+            }
+            .footer__list--social {
+                margin-bottom: $mg-1;
+                img {
+                    height: 30px;
+                    width: 30px;
+                    margin-right: $mg-1;
+                }
+            }
+        }
+        .footer__bot {
+            margin-top: $mg-1;
+            img {
+                width: 80px;
+                border-radius: $border-radius-0 + 2;
+            }
+            .footer__info {
+                padding: 0 $pd-2 - 5;
+                .footer__title {
+                    @include styleText($fs-0 - 2,$bg-color,0,0,$fw-bold-1);
+                    margin-bottom: $mg-0 - 5;
+                }
+                p {
+                    @include styleText($fs-0 - 3,$color-p,0,0,$fw-normal);
+                    margin-bottom: $mg-0 - 7;
+                    a {
+                        color: $color-a-hover;
+                        text-decoration: none;
+                    }
+                }
+            }
+            .image {
+                width: 130px;
+            }
+        }
+    }
+}
+
+
+@include responsive('large')
+{
+    footer {
+        .footer__content {
+            .footer__top {
+                .footer__center {
+                    display: none;
+                }
+                .footer__left {
+                    .footer__title {
+                        display: none;
+                    }
+                    .footer__top--left {
+                        display: none;
+                    }
+                    .footer__top--right {
+                        ul {
+                        }
+                    }
+                }
+                .footer__right {
+                    .footer__app {
+                        display: none;
+                    }
+                    .footer__title { 
+                        display: none;
+                    }
+                }
+            }
+            .footer__bot {
+                text-align: center;
+            }
+        }
+    }
+}
+
+@include responsive('medium')
+{
+    footer {
+        .footer__content {
+            .footer__top {
+                .footer__center {
+                    display: none;
+                }
+                .footer__left {
+                    text-align: center;
+                    .footer__top--right {
+                        ul {
+                            li {
+                                display: inline-block;
+                                padding: 0 $pd-0;
+                            }
+                        }
+                    }
+                }
+                .footer__right {
+                    text-align: center;
+                    .footer__list--social {
+                        a {
+                            padding: 0 $pd-0;
+                            img {
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
